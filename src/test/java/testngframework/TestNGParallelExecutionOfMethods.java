@@ -1,0 +1,62 @@
+package testngframework;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+
+// In XML file
+// <suite name="GroupsPracticeSuite" parallel="methods" >
+// <class name="testngframework.TestNGParallelExecutionOfMethods"/>
+
+public class TestNGParallelExecutionOfMethods{
+    
+	@Test  
+	public void bookMyShow() throws InterruptedException {
+		
+		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\Anjana Raja\\Documents\\eclipse-workspace\\SeleniumProject\\src\\main\\resources\\drivers\\chromedriver.exe");
+	   
+		WebDriver driver=new ChromeDriver();
+	    driver.manage().window().maximize();
+	    driver.manage().deleteAllCookies();
+	    //driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+	    
+		driver.get("https://ticketnew.com/movies");
+		Thread.sleep(2000);
+		
+		driver.close();
+		
+	}
+	
+    @Test
+	public void ajioStore() throws InterruptedException {
+		
+		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\Anjana Raja\\Documents\\eclipse-workspace\\SeleniumProject\\src\\main\\resources\\drivers\\chromedriver.exe");
+	    
+    	WebDriver driver=new ChromeDriver();
+	    driver.manage().window().maximize();
+	    driver.manage().deleteAllCookies();
+	    //driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+	    
+		driver.get("https://www.ajio.com/");
+		Thread.sleep(2000);
+		
+		driver.close();
+	}
+	
+    @Test
+	public void shoppingKart() throws InterruptedException {
+		
+		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\Anjana Raja\\Documents\\eclipse-workspace\\SeleniumProject\\src\\main\\resources\\drivers\\chromedriver.exe");
+	    
+    	WebDriver driver=new ChromeDriver();
+	    driver.manage().window().maximize();
+	    driver.manage().deleteAllCookies();
+	    //driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+	    
+		driver.get("https://shoppingkartonline.in/");
+		Thread.sleep(2000);
+		
+		driver.close();
+	}
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [GroupsPracticeSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="GroupTest(failed)">
+    <parameter name="Username" value="anjuraja1205@gmail.com"/>
+    <parameter name="Password" value="Anjana212051999"/>
+    <classes>
+      <class name="testngframework.TestNGParameters1">
+        <methods>
+          <include name="Parameterization" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testngframework.TestNGParameters1 -->
+      <class name="testngframework.TestNGparallelexecutionOfClasses">
+        <methods>
+          <include name="shoppingKart"/>
+          <include name="bookMyShow"/>
+          <include name="ajioStore"/>
+        </methods>
+      </class> <!-- testngframework.TestNGparallelexecutionOfClasses -->
+    </classes>
+  </test> <!-- GroupTest(failed) -->
+</suite> <!-- Failed suite [GroupsPracticeSuite] -->
