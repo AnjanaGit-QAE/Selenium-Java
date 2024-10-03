@@ -15,7 +15,7 @@ public class TestNGFactoryMethod {
      int expectedSum;
      int expectedDifference;
 
-    // Constructor that takes parameters for the tests
+  
     public TestNGFactoryMethod(int a, int b, int expectedSum, int expectedDifference) {
         this.a = a;
         this.b = b;
